@@ -1,0 +1,4 @@
+package jig.tutorial.domain.model.product;
+
+public class Price {
+}
