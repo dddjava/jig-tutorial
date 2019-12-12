@@ -9,6 +9,7 @@
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
+    id "org.dddjava.jig-gradle-plugin" version "2019.12.1"
 }
 
 repositories {
@@ -35,3 +36,6 @@ test {
     // Use junit platform for unit tests
     useJUnitPlatform()
 }
+
+[compileJava, processResources]*.mustRunAfter(clean)
+jigReports.dependsOn(clean, classes)
