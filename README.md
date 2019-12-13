@@ -176,7 +176,7 @@ public class Product {
 
 ### クラスの関連で開発する
 商品としての関心ごとを挙げ、全てに対するクラスを作成していきます。
-ここでは商品名と価格を持つとします。
+ここでは商品名と定価を持つとします。
 
 先ほどと同様に`Name`クラスと`Price`クラスを作成します。
 
@@ -184,7 +184,7 @@ public class Product {
 
 🏷 [65467f34507d197d5a50096d1fb75fd119e21f7e](https://github.com/dddjava/jig-tutorial/commit/65467f34507d197d5a50096d1fb75fd119e21f7e)
 
-商品名と価格は商品が使用するので、`Product`のフィールドに追加します。
+商品名と定価は商品が使用するので、`Product`のフィールドに追加します。
 
 ```java
 public class Product {
