@@ -160,12 +160,14 @@ public class Product {
 }
 ```
 
-作成できたら `jigReports` を実行します。
+作成できたらGradleで `jigReports` タスクを実行します。
 `./build/jig` に `business-rule-relation.svg` が出力されます。
 
 ![002](./docs/002.png)
 
 🏷 `example/201912-3`
+
+📝 `jigReports` タスクの実行はIDEのワンアクションで行えるようにしておくとスムーズです。
 
 ### クラスの関連で開発する
 商品としての関心ごとを挙げ、全てに対するクラスを作成していきます。
