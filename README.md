@@ -10,8 +10,9 @@ JIGチュートリアル
 1. アプリケーションの開発
 1. 他のJIGドキュメントからのフィードバック
 
-🏷 は本リポジトリのGitのTagです。
-やっていることがわからない場合などに使用してください。
+🏷 は本リポジトリのGitのTagです。やっていることがわからない場合などに使用してください。
+
+📝 はチュートリアルからは外れる内容ですが、知っておくと役立つことを書いています。
 
 ## プロジェクトの準備
 
@@ -47,6 +48,34 @@ BUILD SUCCESSFUL in 5s
 
 🏷 `example/201912-1`
 
+### 想定するパッケージ構成
+
+JIGが標準でサポートするアーキテクチャは [ドメインを独立させる Isolating the Domain](https://github.com/system-sekkei/isolating-the-domain) です。
+パッケージ構成は以下のようになります。
+
+```
+.
++-- presentation
+|    +-- controller
+|    +-- view
++-- application
+|    +-- service
+|    +-- repository
++-- infrastructure
+|    +-- datasource
+|    +-- transfer
++-- domain
+     +-- type
+     +-- model
+```
+
+JIGではこのパッケージを「ビジネスルール」と「アプリケーション」に分類します。
+
+- アプリケーション: 三層。 `presentation`, `application`, `infrastructure` パッケージ。
+- ビジネスルール: ドメインモデル。 `domain` パッケージ。
+
+📝 Isolating the DomainでなくてもいくつかのJIGドキュメントは活用できます。たとえばビジネスルールはPOJOなのでパッケージさえあっていれば出力できますし、パッケージは指定できます。
+
 ## JIGの導入
 
 [JIG Gradle Plugin](https://github.com/dddjava/jig/tree/master/jig-gradle-plugin) を導入します。
@@ -77,6 +106,8 @@ BUILD SUCCESSFUL in 11s
 ```
 
 🏷 `example/201912-2`
+
+📝 Gradleを使用していない、Gradleのバージョンが古いなどで `JIG Gradle Plugin` が使用できない場合は [コマンドライン版](https://github.com/dddjava/jig/tree/master/jig-cli) を使用して出力できます。
 
 ### 追加の確認
 
