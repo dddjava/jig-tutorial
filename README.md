@@ -88,11 +88,11 @@ plugins {
 }
 ```
 
-JIGドキュメント時にコンパイルするように設定します。
+JIGドキュメント出力時にコンパイルするように設定します。
 
 ```groovy
-classes.dependsOn(clean)
-jigReports.dependsOn(classes)
+[compileJava, processResources]*.mustRunAfter(clean)
+jigReports.dependsOn(clean, classes)
 ```
 
 `jigReports` を実行して `BUILD SUCCESSFUL` となればOKです。
