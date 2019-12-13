@@ -293,7 +293,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
 }
 ```
-``
+
 ### アプリケーションを開発する
 `@Controller`, `@Service`, `@Repository` を付与したクラスを作成します。
 
@@ -307,7 +307,7 @@ dependencies {
 🏷 `example/201912-8`
 
 Javadocを記述します。
-JIGが扱うものは以下になります。
+JIGはJavadocから以下を読み取って使用します。
 
 - `Controller` のクラス名
 - `Service` のクラス名、メソッド名
