@@ -10,7 +10,7 @@ JIG開発チュートリアル
 1. アプリケーションの開発
 1. 他のJIGドキュメントからのフィードバック
 
-🏷 は本リポジトリのGitのTagです。やっていることがわからない場合などに使用してください。
+🏷 は本リポジトリのコミットのSHA1 IDです。やっていることがわからない場合などに使用してください。
 
 📝 はチュートリアルからは外れる内容ですが、知っておくと役立つことを書いています。
 
@@ -48,7 +48,7 @@ BUILD SUCCESSFUL in 5s
 4 actionable tasks: 4 executed
 ```
 
-🏷 b61193ca161c711066dd424b29badae963d6bd24
+🏷 [b61193ca161c711066dd424b29badae963d6bd24](https://github.com/dddjava/jig-tutorial/commit/b61193ca161c711066dd424b29badae963d6bd24)
 
 ### 想定するパッケージ構成
 
@@ -109,7 +109,7 @@ BUILD SUCCESSFUL in 11s
 1 actionable task: 1 executed
 ```
 
-🏷 a643f07c5762d49e7166a58b48332c5e9c5df5e3
+🏷 [a643f07c5762d49e7166a58b48332c5e9c5df5e3](https://github.com/dddjava/jig-tutorial/commit/a643f07c5762d49e7166a58b48332c5e9c5df5e3)
 
 📝 `jigReports` の実行はIDEのワンアクションで行えるようにしておくとスムーズです。
 
@@ -169,7 +169,7 @@ public class Product {
 
 ![002](./docs/002.png)
 
-🏷 ce64e504f95e1d72b35412e24493bfbbdbc91a85
+🏷 [ce64e504f95e1d72b35412e24493bfbbdbc91a85](https://github.com/dddjava/jig-tutorial/commit/ce64e504f95e1d72b35412e24493bfbbdbc91a85)
 
 ### クラスの関連で開発する
 商品としての関心ごとを挙げ、全てに対するクラスを作成していきます。
@@ -179,7 +179,7 @@ public class Product {
 
 ![003](./docs/003.png)
 
-🏷 65467f34507d197d5a50096d1fb75fd119e21f7e
+🏷 [65467f34507d197d5a50096d1fb75fd119e21f7e](https://github.com/dddjava/jig-tutorial/commit/65467f34507d197d5a50096d1fb75fd119e21f7e)
 
 商品名と価格は商品が使用するので、`Product`のフィールドに追加します。
 
@@ -192,7 +192,7 @@ public class Product {
 
 ![004](./docs/004.png)
 
-🏷 48470763c78c7f3aa27e5bfa47256bfccff11119
+🏷 [48470763c78c7f3aa27e5bfa47256bfccff11119](https://github.com/dddjava/jig-tutorial/commit/48470763c78c7f3aa27e5bfa47256bfccff11119)
 
 Javadocコメントに日本語名を記述します。
 
@@ -205,7 +205,7 @@ public class Product {
 
 ![005](./docs/005.png)
 
-🏷 4a072917cd9caeba8339870a34fb393d0a22d6a3
+🏷 [4a072917cd9caeba8339870a34fb393d0a22d6a3](https://github.com/dddjava/jig-tutorial/commit/4a072917cd9caeba8339870a34fb393d0a22d6a3)
 
 ### パッケージの関連で開発する
 次に注文と出荷を開発します。
@@ -216,7 +216,7 @@ public class Product {
 
 ![006](./docs/006.png)
 
-🏷 4a0dd1192fd2b1adbef39c410bf71c868d4dcb94
+🏷 [4a0dd1192fd2b1adbef39c410bf71c868d4dcb94](https://github.com/dddjava/jig-tutorial/commit/4a0dd1192fd2b1adbef39c410bf71c868d4dcb94)
 
 注文は商品、出荷は注文と商品を扱います。それぞれフィールドに追加します。
 
@@ -227,7 +227,7 @@ public class Product {
 
 ![008](./docs/008.png)
 
-🏷 36f089f4f049bc13db7912afe3cc467da33176d6
+🏷 [36f089f4f049bc13db7912afe3cc467da33176d6](https://github.com/dddjava/jig-tutorial/commit/36f089f4f049bc13db7912afe3cc467da33176d6)
 
 ### 区分で開発する
 取り扱うステータスを `enum` で列挙します。
@@ -239,7 +239,7 @@ public class Product {
 
 ![009](./docs/009.png)
 
-🏷 37f68c5b0f669bab4433de7ec634b01ec5a69d59
+🏷 [37f68c5b0f669bab4433de7ec634b01ec5a69d59](https://github.com/dddjava/jig-tutorial/commit/37f68c5b0f669bab4433de7ec634b01ec5a69d59)
 
 商品在庫を商品のメソッドで返します。
 
@@ -256,7 +256,7 @@ public class Product {
 
 ![010](./docs/010.png)
 
-🏷 56755c51e8c34ada5f764c19e9291d25dd1370e7
+🏷 [56755c51e8c34ada5f764c19e9291d25dd1370e7](https://github.com/dddjava/jig-tutorial/commit/56755c51e8c34ada5f764c19e9291d25dd1370e7)
 
 ここまでの設計は `business-rule.xlsx` で一覧できます。
 
@@ -326,7 +326,7 @@ dependencies {
 
 ![015](./docs/015.png)
 
-🏷 14e3ef13e2982a7d87949f7cf5cae0d0eb4e1e36
+🏷 [14e3ef13e2982a7d87949f7cf5cae0d0eb4e1e36](https://github.com/dddjava/jig-tutorial/commit/14e3ef13e2982a7d87949f7cf5cae0d0eb4e1e36)
 
 ここまでの設計は `application.xlsx` で一覧できます。
 
