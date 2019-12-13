@@ -82,13 +82,15 @@ JIGではこのパッケージを「ビジネスルール」と「アプリケ�
 
 [JIG Gradle Plugin](https://github.com/dddjava/jig/tree/master/jig-gradle-plugin) を導入します。
 
+`build.gradle` の `plugins` に `org.dddjava.jig-gradle-plugin` を追加します。
+
 ```groovy
 plugins {
     id "org.dddjava.jig-gradle-plugin" version "2019.12.1"
 }
 ```
 
-JIGドキュメント出力時にコンパイルするように設定します。
+JIGドキュメント出力時にコンパイルするよう、 `build.gradle` に以下を追加します。
 
 ```groovy
 [compileJava, processResources]*.mustRunAfter(clean)
@@ -108,6 +110,8 @@ BUILD SUCCESSFUL in 11s
 ```
 
 🏷 `example/201912-2`
+
+📝 `jigReports` の実行はIDEのワンアクションで行えるようにしておくとスムーズです。
 
 📝 Gradleを使用していない、Gradleのバージョンが古いなどで `JIG Gradle Plugin` が使用できない場合は [コマンドライン版](https://github.com/dddjava/jig/tree/master/jig-cli) を使用して出力できます。
 
@@ -166,8 +170,6 @@ public class Product {
 ![002](./docs/002.png)
 
 🏷 `example/201912-3`
-
-📝 `jigReports` タスクの実行はIDEのワンアクションで行えるようにしておくとスムーズです。
 
 ### クラスの関連で開発する
 商品としての関心ごとを挙げ、全てに対するクラスを作成していきます。
