@@ -10,9 +10,9 @@ JIG開発チュートリアル
 1. アプリケーションの開発
 1. 他のJIGドキュメントからのフィードバック
 
-🏷 は本リポジトリのコミットのSHA1 IDです。やっていることがわからない場合などに使用してください。
-
-📝 はチュートリアルからは外れる内容ですが、知っておくと役立つことを書いています。
+- 🎓 は説明です。操作はありません。
+- 🏷 は本リポジトリのコミットです。やっていることがわからない場合などに使用してください。
+- 📝 はチュートリアルからは外れる内容ですが、知っておくと役立つことを書いています。
 
 ## プロジェクトの準備
 
@@ -39,7 +39,7 @@ $ gradle init --type java-library \
     --package jig.tutorial
 ```
 
-`build` を実行して `BUILD SUCCESSFUL` となればOKです。
+Gradleの`build`タスクを実行してください。
 
 ```bash
 $ ./gradlew build
@@ -48,12 +48,15 @@ BUILD SUCCESSFUL in 5s
 4 actionable tasks: 4 executed
 ```
 
+上記のように `BUILD SUCCESSFUL` が出力されればOKです。JDKとGradleの確認ができました。
+お好きなIDEに取り込んでください。
+
 🏷 [b61193ca161c711066dd424b29badae963d6bd24](https://github.com/dddjava/jig-tutorial/commit/b61193ca161c711066dd424b29badae963d6bd24)
 
-### 想定するパッケージ構成
+### 🎓 想定するパッケージ構成
 
 JIGが標準でサポートするアーキテクチャは [ドメインを独立させる Isolating the Domain](https://github.com/system-sekkei/isolating-the-domain) です。
-パッケージ構成は以下のようになります。
+Isolating the Domainのパッケージ構成は以下の通りです。
 
 ```
 .
@@ -71,12 +74,12 @@ JIGが標準でサポートするアーキテクチャは [ドメインを独立
      +-- model
 ```
 
-JIGではこのパッケージを「ビジネスルール」と「アプリケーション」に分類します。
+JIGではこれらを「ビジネスルール」と「アプリケーション」に分類します。
 
 - アプリケーション: 三層。 `presentation`, `application`, `infrastructure` パッケージ。
 - ビジネスルール: ドメインモデル。 `domain` パッケージ。
 
-📝 Isolating the DomainでなくてもいくつかのJIGドキュメントは活用できます。たとえばビジネスルールはPOJOなのでパッケージさえあっていれば出力できますし、パッケージは指定できます。
+📝 Isolating the Domainに準拠していなくても、JIGドキュメント自体の出力は可能です。
 
 ## JIGの導入
 
@@ -125,7 +128,7 @@ $ dot -V
 dot - graphviz version 2.43.0 (0)
 ```
 
-## JIGドキュメントの紹介
+## 🎓 JIGドキュメントの紹介
 
 JIGドキュメントには以下があります。
 
