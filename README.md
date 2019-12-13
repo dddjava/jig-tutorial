@@ -239,8 +239,6 @@ public class Product {
 
 ![009](./docs/009.png)
 
-🏷 [37f68c5b0f669bab4433de7ec634b01ec5a69d59](https://github.com/dddjava/jig-tutorial/commit/37f68c5b0f669bab4433de7ec634b01ec5a69d59)
-
 商品在庫を商品のメソッドで返します。
 
 ```java
@@ -256,7 +254,7 @@ public class Product {
 
 ![010](./docs/010.png)
 
-🏷 [56755c51e8c34ada5f764c19e9291d25dd1370e7](https://github.com/dddjava/jig-tutorial/commit/56755c51e8c34ada5f764c19e9291d25dd1370e7)
+🏷 [37f68c5b0f669bab4433de7ec634b01ec5a69d59](https://github.com/dddjava/jig-tutorial/commit/37f68c5b0f669bab4433de7ec634b01ec5a69d59)
 
 ここまでの設計は `business-rule.xlsx` で一覧できます。
 
@@ -306,6 +304,8 @@ dependencies {
 }
 ```
 
+🏷 [3022c08f6b43111ab67dc0c467e0e67b4d6425b4](https://github.com/dddjava/jig-tutorial/commit/3022c08f6b43111ab67dc0c467e0e67b4d6425b4)
+
 ### アプリケーションを開発する
 `@Controller`, `@Service`, `@Repository` を付与したクラスを作成します。
 
@@ -326,7 +326,7 @@ dependencies {
 
 ![015](./docs/015.png)
 
-🏷 [14e3ef13e2982a7d87949f7cf5cae0d0eb4e1e36](https://github.com/dddjava/jig-tutorial/commit/14e3ef13e2982a7d87949f7cf5cae0d0eb4e1e36)
+🏷 [de6ef6ead230fb8d9a349f4a12c09204c2197fd4](https://github.com/dddjava/jig-tutorial/commit/de6ef6ead230fb8d9a349f4a12c09204c2197fd4)
 
 ここまでの設計は `application.xlsx` で一覧できます。
 
