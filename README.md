@@ -22,7 +22,7 @@ JIGチュートリアル
 - JDK `11`
 - JIG `2019.12.1`
 - Gradle `6.0.1`
-- GraphViz `2.43.0`
+- Graphviz `2.43.0`
 - Spring Boot `2.2.2.RELEASE`
 
 ### Javaプロジェクトの準備
