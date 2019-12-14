@@ -119,7 +119,7 @@ BUILD SUCCESSFUL in 11s
 
 📝 Gradleを使用していない、Gradleのバージョンが古いなどで `JIG Gradle Plugin` が使用できない場合は [コマンドライン版](https://github.com/dddjava/jig/tree/master/jig-cli) を使用して出力できます。
 
-### 追加の確認
+### 環境の確認
 
 JIGはダイアグラム出力に[Graphviz](https://www.graphviz.org/)を使用しています。
 インストールされていることを確認してください。
@@ -127,6 +127,22 @@ JIGはダイアグラム出力に[Graphviz](https://www.graphviz.org/)を使用�
 ```bash
 $ dot -V
 dot - graphviz version 2.43.0 (0)
+```
+
+JIG Gradle Plugin `2019.12.2` 以降なら `verifyJigEnvironment` タスクで実行環境を検証できます。
+
+```bash
+$ ./gradlew verifyJigEnvironment
+
+> Task :verifyJigEnvironment FAILED
+-- JIG ERROR -----------------------------------------------
++ 実行可能なGraphVizが見つけられませんでした。
++ dotにPATHが通っているか確認してください。
++ JIGはダイアグラムの出力にGraphVizを使用しています。
++
++ GraphVizは以下から入手できます。
++     https://www.graphviz.org/
+------------------------------------------------------------
 ```
 
 ## 🎓 JIGドキュメントの紹介
