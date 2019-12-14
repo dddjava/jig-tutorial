@@ -9,7 +9,7 @@
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
-    id "org.dddjava.jig-gradle-plugin" version "2019.12.1"
+    id "org.dddjava.jig-gradle-plugin" version "2019.12.2"
 }
 
 repositories {
