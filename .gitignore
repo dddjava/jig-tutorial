@@ -7,3 +7,5 @@ build
 # Ignore IntelliJ directory
 .idea/
 
+target/
+example.iml
